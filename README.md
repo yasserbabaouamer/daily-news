@@ -34,12 +34,12 @@ staying informed on the go.
 
 ## 3. Screenshots
 
-<img id="loading" src="https://drive.usercontent.google.com/download?id=1gwCn0fmWrCC1FGxl9pbdlXhduxxQ84Ff" width="30%"></img>
-<img id="home" src="https://drive.usercontent.google.com/download?id=1h9-V1ilPy7t5mL4ZW4jrMU42_GJbeiTZ" width="30%"></img> 
-<img id="favorites" src="https://drive.usercontent.google.com/download?id=1g_tqUHuK96TCVavwOAkk5ej4Cy3fM3Ws" width="30%"></img> 
-<img id="login" src="https://drive.usercontent.google.com/download?id=1hL_GEy4DucZhQALSFkCV0-LCSMqQVUzC" width="30%"></img> 
-<img id="signup" src="https://drive.usercontent.google.com/download?id=1hKH05FAhLaVDfBu7ag0Cg71Pw9P_AsJd" width="30%"></img> 
-<img id="profile" src="https://drive.usercontent.google.com/download?id=1hD7frYHlWPAL4bzFc40-kP0UWfSW6oCp" width="30%"></img> 
+<img id="loading" src="https://drive.usercontent.google.com/download?id=1gwCn0fmWrCC1FGxl9pbdlXhduxxQ84Ff" width="33%"></img>
+<img id="home" src="https://drive.usercontent.google.com/download?id=1h9-V1ilPy7t5mL4ZW4jrMU42_GJbeiTZ" width="33%"></img> 
+<img id="favorites" src="https://drive.usercontent.google.com/download?id=1g_tqUHuK96TCVavwOAkk5ej4Cy3fM3Ws" width="33%"></img> 
+<img id="login" src="https://drive.usercontent.google.com/download?id=1hL_GEy4DucZhQALSFkCV0-LCSMqQVUzC" width="33%"></img> 
+<img id="signup" src="https://drive.usercontent.google.com/download?id=1hKH05FAhLaVDfBu7ag0Cg71Pw9P_AsJd" width="33%"></img> 
+<img id="profile" src="https://drive.usercontent.google.com/download?id=1hD7frYHlWPAL4bzFc40-kP0UWfSW6oCp" width="33%"></img> 
 
 ## 4. Reflection
 
@@ -52,11 +52,11 @@ Daily News is a mobile application developed as part of a personal project. The 
 
 ## Challenges Faced
 
-### 1. Implementing user authentication with several SSO providers
+### Implementing user authentication with several SSO providers
 
 Integrating multiple SSO providers like Google and Facebook required configuring different SDKs and handling unique authentication flows. Ensuring smooth transitions between login methods while maintaining consistent user sessions was a key challenge.
 
-### 2. Ensuring consistency between the API and Firebase storage
+### Ensuring consistency between the API and Firebase storage
 
 Synchronizing news from the API with user-saved favorites in Firestore required careful handling of real-time updates. Managing data integrity, especially during network issues, was essential for a consistent user experience.
 
