@@ -34,12 +34,12 @@ staying informed on the go.
 
 ## 3. Screenshots
 
-<img id="loading" src="https://drive.usercontent.google.com/download?id=1gwCn0fmWrCC1FGxl9pbdlXhduxxQ84Ff" width="33%"></img>
-<img id="home" src="https://drive.usercontent.google.com/download?id=1h9-V1ilPy7t5mL4ZW4jrMU42_GJbeiTZ" width="33%"></img> 
-<img id="favorites" src="https://drive.usercontent.google.com/download?id=1g_tqUHuK96TCVavwOAkk5ej4Cy3fM3Ws" width="33%"></img> 
-<img id="login" src="https://drive.usercontent.google.com/download?id=1hL_GEy4DucZhQALSFkCV0-LCSMqQVUzC" width="33%"></img> 
-<img id="signup" src="https://drive.usercontent.google.com/download?id=1hKH05FAhLaVDfBu7ag0Cg71Pw9P_AsJd" width="33%"></img> 
-<img id="profile" src="https://drive.usercontent.google.com/download?id=1hD7frYHlWPAL4bzFc40-kP0UWfSW6oCp" width="33%"></img> 
+<img id="loading" src="https://drive.usercontent.google.com/download?id=1gwCn0fmWrCC1FGxl9pbdlXhduxxQ84Ff" width="32%"></img>
+<img id="home" src="https://drive.usercontent.google.com/download?id=1h9-V1ilPy7t5mL4ZW4jrMU42_GJbeiTZ" width="32%"></img> 
+<img id="favorites" src="https://drive.usercontent.google.com/download?id=1g_tqUHuK96TCVavwOAkk5ej4Cy3fM3Ws" width="32%"></img> 
+<img id="login" src="https://drive.usercontent.google.com/download?id=1hL_GEy4DucZhQALSFkCV0-LCSMqQVUzC" width="32%"></img> 
+<img id="signup" src="https://drive.usercontent.google.com/download?id=1hKH05FAhLaVDfBu7ag0Cg71Pw9P_AsJd" width="32%"></img> 
+<img id="profile" src="https://drive.usercontent.google.com/download?id=1hD7frYHlWPAL4bzFc40-kP0UWfSW6oCp" width="32%"></img> 
 
 ## 4. Reflection
 
