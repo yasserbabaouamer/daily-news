@@ -28,6 +28,7 @@ import owner.yacer.mynewsapp.models.Article
 import owner.yacer.mynewsapp.utils.BottomNavCallback
 import owner.yacer.mynewsapp.adapters.FavoriteNewsAdapter
 import owner.yacer.mynewsapp.R
+import owner.yacer.mynewsapp.utils.AppUtils
 import java.util.*
 
 
@@ -75,15 +76,15 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun getFavoriteNews() {
-        lifecycleScope.async {
-            db.collection("root").document(user!!.uid).get().addOnCompleteListener {
-                if (it.isSuccessful) {
+        lifecycleScope.launch {
+            db.collection("root").document(user!!.uid).get().addOnCompleteListener { task ->
+                if (task.isSuccessful && task.result.data != null) {
                     val articleList = LinkedList<Article>()
-                    val result = it.result.data as HashMap<String, Any>
+                    val result = task.result.data as HashMap<String, Any>
                     Log.e("msg", result.toString())
                     for (entry: Map.Entry<String, Any> in result.entries) {
                         val map = entry.value as HashMap<String, Any>
-                        val article = mapperToArticle(map)
+                        val article = AppUtils.mapperToArticle(map)
                         articleList.add(article)
                     }
                     FavoriteNewsAdapter.articles = articleList
@@ -91,20 +92,6 @@ class HomeActivity : AppCompatActivity() {
                 }
             }.await()
         }
-
-    }
-
-    private fun mapperToArticle(map: Map<String, Any>): Article {
-        return Article(
-            map["author"] as String,
-            map["content"] as String,
-            map["description"] as String,
-            map["publishedAt"] as String,
-            null,
-            map["title"] as String,
-            map["url"] as String,
-            map["urlToImage"] as String
-        )
     }
 
     private fun setUpBottomNavigationView() {

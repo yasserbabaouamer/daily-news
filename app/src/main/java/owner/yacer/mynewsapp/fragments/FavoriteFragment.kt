@@ -21,6 +21,7 @@ import owner.yacer.mynewsapp.models.Article
 import owner.yacer.mynewsapp.adapters.FavoriteNewsAdapter
 import owner.yacer.mynewsapp.activities.HomeActivity
 import owner.yacer.mynewsapp.R
+import owner.yacer.mynewsapp.utils.AppUtils
 import java.util.*
 
 
@@ -62,8 +63,8 @@ class FavoriteFragment : Fragment(R.layout.fragment_favorite) {
                 var result = value.data //as java.util.HashMap<String, Any>
                 Log.e("msg", result.toString())
                 for (entry: Map.Entry<String, Any> in result!!.entries) {
-                    var map = entry.value as java.util.HashMap<String, Any>
-                    var article = mapperToArticle(map)
+                    val map = entry.value as java.util.HashMap<String, Any>
+                    val article = AppUtils.mapperToArticle(map)
                     articleList.add(article)
                 }
                 //fav_progressBar.isVisible = false
@@ -72,16 +73,5 @@ class FavoriteFragment : Fragment(R.layout.fragment_favorite) {
             }
         }
     }
-    private fun mapperToArticle(map: Map<String, Any>): Article {
-        return Article(
-            map["author"] as String,
-            map["content"] as String,
-            map["description"] as String,
-            map["publishedAt"] as String,
-            null,
-            map["title"] as String,
-            map["url"] as String,
-            map["urlToImage"] as String
-        )
-    }
+
 }
